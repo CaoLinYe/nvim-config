@@ -1,6 +1,6 @@
 -- 基础 UI
 vim.opt.number = true              -- 显示行号
-vim.opt.relativenumber = true      -- 相对行号
+vim.opt.relativenumber = false      -- 相对行号
 vim.opt.cursorline = true          -- 高亮当前行
 vim.opt.wrap = false               -- 不换行
 vim.opt.signcolumn = "yes"         -- 始终显示 sign column

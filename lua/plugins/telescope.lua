@@ -7,7 +7,13 @@ return {
 
         config = function()
             local telescope = require("telescope")
-            telescope.setup({})
+            telescope.setup({
+                defaults = {
+                    file_ignore_patterns = {
+                        "%.meta",
+                    },
+                },
+            })
             local builtin = require("telescope.builtin")
             vim.keymap.set("n", "<C-p>", builtin.find_files, {})
             vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})

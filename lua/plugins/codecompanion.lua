@@ -22,6 +22,9 @@ return {
             local use_deepseek, use_gemini = true, false
             if use_deepseek then 
                 require("codecompanion").setup({
+                    opts = {
+                        language = "Chinese",
+                    },
                     adapters = {
                         -- 1. 定义 DeepSeek 适配器
                         deepseek = function()

@@ -9,7 +9,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>cc", ":CodeCompanionChat<CR>")   -- 打开 AI 窗口
 vim.keymap.set("v", "<leader>ct", ":CodeCompanionTransform<CR>") -- 视觉模式选中代码改写
 
--- 自定义按键
+-- 自定义按键 codeium 智能提示操作 
 vim.keymap.set("i", "<C-g>", function()
     return vim.fn["codeium#Accept"]()
 end, { expr = true, silent = true })
