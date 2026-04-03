@@ -32,4 +32,4 @@ vim.opt.foldmethod = "indent"
 -- 剪贴板
 vim.opt.clipboard = "unnamedplus"  -- 系统剪贴板
 
-
+vim.opt.mouse = "" -- 禁用鼠标
