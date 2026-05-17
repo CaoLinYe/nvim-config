@@ -21,18 +21,18 @@ return {
                         })
                     end,
                     -- 定义 gemini 适配器
-                    gemini = function()
-                        return require("codecompanion.adapters").extend("gemini", {
-                            env = {
-                                api_key = os.getenv("GEMINI_API_KEY"), -- 建议从环境变量读取
-                            },
-                            schema = {
-                                model = {
-                                    default = "gemini-1.5-pro", -- 或者使用 "gemini-1.5-flash" 速度更快
-                                },
-                            },
-                        })
-                    end,
+                    -- gemini = function()
+                    --     return require("codecompanion.adapters").extend("gemini", {
+                    --         env = {
+                    --             api_key = os.getenv("GEMINI_API_KEY"), -- 建议从环境变量读取
+                    --         },
+                    --         schema = {
+                    --             model = {
+                    --                 default = "gemini-1.5-pro", -- 或者使用 "gemini-1.5-flash" 速度更快
+                    --             },
+                    --         },
+                    --     })
+                    -- end,
                 },
                 strategies = {
                     -- 2. 将所有策略切换为 deepseek，彻底摆脱 Copilot 依赖
