@@ -6,6 +6,7 @@ vim.opt.wrap = false               -- 不换行
 vim.opt.signcolumn = "yes"         -- 始终显示 sign column
 vim.opt.scrolloff = 8              -- 上下预留行
 vim.opt.sidescrolloff = 8
+vim.opt.list = false               -- 不显示行尾空格
 
 -- 搜索
 vim.opt.ignorecase = true          -- 忽略大小写
@@ -33,3 +34,4 @@ vim.opt.foldmethod = "indent"
 vim.opt.clipboard = "unnamedplus"  -- 系统剪贴板
 
 vim.opt.mouse = "" -- 禁用鼠标
+
