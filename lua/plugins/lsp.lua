@@ -1,16 +1,17 @@
 return {
     {
-        "neovim/nvim-lspconfig", -- 现在更多是提供配置模板
+        "neovim/nvim-lspconfig",
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-            -- C/C++
+            -- clangd
             vim.lsp.config("clangd", {
+                cmd = { "/opt/local/bin/clangd-mp-17" },
                 capabilities = capabilities,
             })
             vim.lsp.enable("clangd")
 
-            -- Python
+            -- pyright
             vim.lsp.config("pyright", {
                 capabilities = capabilities,
             })
