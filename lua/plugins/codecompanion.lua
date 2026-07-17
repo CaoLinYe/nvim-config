@@ -82,13 +82,14 @@ return {
         end,
     },
     -- 2. 渲染 Markdown 内容
-    {
-        "MeanderingProgrammer/render-markdown.nvim",
-        ft = { "markdown", "codecompanion" },
-        config = function()
-            require("render-markdown").setup()
-        end,
-    },
+    -- {
+    --     "MeanderingProgrammer/render-markdown.nvim",
+    --     ft = { "markdown", "codecompanion" },
+    --     config = function()
+    --         require("render-markdown").setup({
+    --         })
+    --     end,
+    -- },
     -- 3. 提供浮窗 Markdown 预览
     {
         "OXY2DEV/markview.nvim",
